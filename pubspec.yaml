@@ -43,10 +43,21 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  share: ^2.0.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  dio: ^4.0.6
+  share_plus: ^6.3.0
+  url_launcher: ^6.1.7
+  flutter_launcher_icons: ^0.11.0
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "Images/logo.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -68,31 +79,63 @@ flutter:
 
   # To add Images to your application, add an Images section, like this:
   assets:
-    - Images/birishiri1.jpg
-    - Images/birishiri2.jpg
-    - Images/dingapota.jpg
-    - Images/Komola.jpg
-    - Images/somessori.jpg
-    - Images/information.png
-    - Images/news.jpg
-    - Images/fireservice.jpg
-    - Images/hospital.jpg
-    - Images/ambulance.jpg
-    - Images/police.jpg
-    - Images/famous.png
-    - Images/hotel.jpg
-    - Images/bus.jpg
-    - Images/rail.png
-    - Images/historical.jpg
-    - Images/restuarant.jpg
-    - Images/training.jpg
-    - Images/doctor.jpg
-    - Images/lawer.jpg
-    - Images/help.jpg
-    - Images/reporter.png
+    - Images/Carousel/birishiri1.jpg
+    - Images/Carousel/birishiri2.jpg
+    - Images/Carousel/dingapota.jpg
+    - Images/Carousel/Komola.jpg
+    - Images/Carousel/somessori.jpg
+    - Images/GridView/information.png
+    - Images/GridView/news.jpg
+    - Images/GridView/fireservice.jpg
+    - Images/GridView/hospital.jpg
+    - Images/GridView/ambulance.jpg
+    - Images/GridView/police.jpg
+    - Images/GridView/famous.png
+    - Images/GridView/hotel.jpg
+    - Images/GridView/bus.jpg
+    - Images/GridView/rail.png
+    - Images/GridView/historical.jpg
+    - Images/GridView/restuarant.jpg
+    - Images/GridView/training.jpg
+    - Images/GridView/doctor.jpg
+    - Images/GridView/lawer.jpg
+    - Images/GridView/help.jpg
+    - Images/GridView/reporter.png
     - Images/NewsImage/netrojournal.jpg
     - Images/NewsImage/netrolive.png
     - Images/NewsImage/times.jpg
+    - Images/NewsImage/netrosonbad.png
+    - Images/NewsImage/prothomAlo.png
+    - Images/NewsImage/DailyStar.png
+    - Images/NewsImage/jugantor.png
+    - Images/NewsImage/kalerKontho.png
+    - Images/NewsImage/somokal.png
+    - Images/NewsImage/ittefaq.png
+    - Images/NewsImage/amaderSomoy.png
+    - Images/NewsImage/noyaDigonto.png
+    - Images/NewsImage/inqilab.png
+    - Images/NewsImage/banglaProtidin.png
+    - Images/NewsImage/jagoNews.png
+    - Images/NewsImage/bdnews.png
+    - Images/Famous/humayunAhmed.png
+    - Images/Famous/moniSing.png
+    - Images/Famous/NimalandoGoon.png
+    - Images/Famous/aliSiddiqi.png
+    - Images/Famous/bariSiddiqi.png
+    - Images/Famous/colonelTaher.png
+    - Images/Famous/sahbuddin.png
+    - Images/Famous/mustofaJobbar.png
+    - Images/Famous/chandroKumar.png
+    - Images/Famous/mInnasAli.png
+    - Images/Famous/ahsanHabib.png
+    - Images/Famous/jotinSarker.png
+    - Images/Famous/asimSaha.png
+    - Images/lawerImage.png
+    - Images/navBar.png
+    - Images/Carousel/ethinicCultural.png
+    - Images/Carousel/sevenMartyrs.png
+    - Images/Carousel/shuImage.png
+    - Images/Carousel/nmcImage.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
