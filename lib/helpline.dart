@@ -26,13 +26,20 @@ class _helplineState extends State<helpline> {
         body: ListView(
           padding: EdgeInsets.fromLTRB(1,5,1,5),
           children: [
+            Text('ফেসবুক গ্রুপ:',
+            textAlign: TextAlign.left,
+              style: TextStyle(
+                fontSize: 25.0,
+                decoration: TextDecoration.underline,
+              ),
+            ),
             InkWell(
               onTap: (){
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => Facehelp()));
               },
               child: Container(
-                height: MediaQuery.of(context).size.height/10,
+                height: MediaQuery.of(context).size.height/12,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -44,13 +51,24 @@ class _helplineState extends State<helpline> {
                     "Netrokona Helpline",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 25.0,
+                        fontWeight: FontWeight.bold
                     ),
                   ),
                 ),
               ),
             ),
 
+            SizedBox(height: 15,),
+
+            Text('হেল্পলাইন:',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+                fontSize: 25.0,
+
+              ),
+            ),
             addSheba("জরুরী সেবা","999"),
             addSheba("শিশু সহায়তা","1098"),
             addSheba("নারী ও শিশু নির্যাতন","109"),
@@ -88,9 +106,12 @@ class _FacehelpState extends State<Facehelp> {
 
 Widget addSheba(String name,String  subname){
   return ListTile(
-    title: Text(name),
+    title: Text(name,
+    style: TextStyle(
+        fontWeight: FontWeight.bold
+    ),),
     subtitle: Text("Call "+subname),
-    leading: Image.asset('Images/help.jpg'),
+    leading: CircleAvatar(backgroundImage: AssetImage('Images/GridView/help.jpg')),
     trailing: ElevatedButton(
       child: Icon(Icons.call),
       onPressed: ()async{
